@@ -111,7 +111,7 @@ public class ArrayPartyTest {
         ArrayParty arrayParty = new ArrayParty();
         int [] nums = {1,1,3,3,3,2,2,2,1,1,1,1,4,4,4,4};
         String expected = "*** Output ***\n" +
-                "1\n3\n2\n1\n4";
+                "1\n3\n2\n4";
 
         //When
         String actual = arrayParty.compress(nums);
@@ -125,7 +125,7 @@ public class ArrayPartyTest {
         //Given
         ArrayParty arrayParty = new ArrayParty();
         char [] letters = {'a', 'a', 'a', 'a', 'b', 'c', 'c', 'a', 'a', 'd',
-                'e', 'e', 'e', 'e'};
+                            'e', 'e', 'e', 'e'};
         String expected = "*** Output ***\n" +
                 "aaaa, b, cc, aa, d, eeee";
 
@@ -136,6 +136,4 @@ public class ArrayPartyTest {
         Assert.assertEquals(expected, actual);
 
     }
-
-
 }
